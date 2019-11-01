@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tło_menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tło_menuDPI1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layout_rozgrywki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ws_511_zero_1024_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TK_04_L.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vds-paneel-zv-060_lr_0.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
