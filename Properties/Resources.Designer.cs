@@ -63,9 +63,39 @@ namespace DontScrewAround.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Instrukcja {
+            get {
+                object obj = ResourceManager.GetObject("Instrukcja", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap layout_rozgrywki {
             get {
                 object obj = ResourceManager.GetObject("layout_rozgrywki", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_dontscrewaround {
+            get {
+                object obj = ResourceManager.GetObject("logo_dontscrewaround", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_dontscrewaround_podpis {
+            get {
+                object obj = ResourceManager.GetObject("logo_dontscrewaround_podpis", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

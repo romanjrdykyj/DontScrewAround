@@ -1,6 +1,6 @@
 ﻿namespace DontScrewAround
 {
-    partial class Form3
+    partial class Form4
     {
         /// <summary>
         /// Required designer variable.
@@ -30,20 +30,19 @@
         {
             this.SuspendLayout();
             // 
-            // Form3
+            // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.BackgroundImage = global::DontScrewAround.Properties.Resources.logo_dontscrewaround_podpis;
+            this.BackgroundImage = global::DontScrewAround.Properties.Resources.Instrukcja;
             this.ClientSize = new System.Drawing.Size(1280, 1024);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1280, 1024);
             this.MinimumSize = new System.Drawing.Size(1278, 982);
-            this.Name = "Form3";
+            this.Name = "Form4";
             this.Text = "DontScrewAround";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Click += new System.EventHandler(this.Form3_Click);
+            this.Click += new System.EventHandler(this.Form4_Click);
             this.ResumeLayout(false);
 
         }
