@@ -15,23 +15,18 @@ namespace DontScrewAround
         public Form1()
         {
             InitializeComponent();
+        
         }
 
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            if(e.KeyCode == Keys.Escape) // wychodzenie z trybu pelnoekranowego
-            {
-                FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable; // widoczność ramki górnej
-                WindowState = FormWindowState.Normal;
-                TopMost = false;
-            }
+            System.Diagnostics.Process.GetCurrentProcess().Kill();
 
-            if (e.KeyCode == Keys.F) // wejście w tryb pelnoekranowy
-            {
-                FormBorderStyle = System.Windows.Forms.FormBorderStyle.None; // widoczność ramki górnej
-                WindowState = FormWindowState.Maximized;
-                TopMost = true;
-            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new Form2().ShowDialog();
         }
     }
 }
