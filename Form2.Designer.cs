@@ -33,10 +33,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // timer1
             // 
+            this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label1
@@ -76,9 +78,15 @@
             this.label3.Location = new System.Drawing.Point(35, 18);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(2);
-            this.label3.Size = new System.Drawing.Size(90, 32);
+            this.label3.Size = new System.Drawing.Size(102, 32);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Wynik: ";
+            this.label3.Text = "Wynik: 0";
+            // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Interval = 1;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // Form2
             // 
@@ -98,6 +106,8 @@
             this.Text = "DontScrewAround";
             this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form2_Paint);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form2_MouseMove);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,5 +119,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Timer timer2;
     }
 }

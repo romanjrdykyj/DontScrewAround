@@ -19,7 +19,8 @@ namespace DontScrewAround
 
         private void Form4_Click(object sender, EventArgs e)
         {
-            new Form1().ShowDialog();
+            new Form1().Show();
+            this.Visible = false;
         }
     }
 }

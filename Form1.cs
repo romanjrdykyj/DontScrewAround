@@ -15,6 +15,7 @@ namespace DontScrewAround
         public Form1()
         {
             InitializeComponent();
+
         
         }
 
@@ -22,11 +23,13 @@ namespace DontScrewAround
         {
             System.Diagnostics.Process.GetCurrentProcess().Kill();
 
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Form2().ShowDialog();
+            new Form2().Show();
+            this.Visible = false;
         }
     }
 }

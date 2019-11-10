@@ -71,15 +71,6 @@
             // 
             // Form1
             // 
-<<<<<<< HEAD
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 600);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MaximumSize = new System.Drawing.Size(1280, 1024);
-            this.MinimumSize = new System.Drawing.Size(800, 600);
-=======
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundImage = global::DontScrewAround.Properties.Resources.tło_menuDPI1280;
@@ -88,7 +79,6 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
->>>>>>> menu
             this.Name = "Form1";
             this.ShowInTaskbar = false;
             this.TopMost = true;
