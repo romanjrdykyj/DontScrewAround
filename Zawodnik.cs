@@ -8,8 +8,8 @@ namespace DontScrewAround
 {
     class Zawodnik
     {
-        public int pozycja_x = 200;
-        public int pozycja_y = 200;
+        public int pozycja_x = 500;
+        public int pozycja_y = 500;
         public int promien = 50;
 
         public Zawodnik()

@@ -13,8 +13,6 @@ namespace DontScrewAround
     public partial class Form1 : Form
     {
 
-        public Boolean stan_menu = false;
-        public int licznik_menu = 0;
         public Form1()
         {
             InitializeComponent();
@@ -33,13 +31,6 @@ namespace DontScrewAround
         {
             new Form2().Show();
             this.Visible = false;
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-           
-            
-
         }
     }
 }

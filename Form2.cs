@@ -123,13 +123,7 @@ namespace DontScrewAround
             label3.Text = "Wynik:" + wynik.ToString();
         }
 
-        private void Form2_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Escape) // wychodzenie z trybu pelnoekranowego
-            {
-                new Form1().ShowDialog();
-            }
-        }
+        
 
         private void timer1_Tick(object sender, EventArgs e)
         {
