@@ -32,5 +32,12 @@ namespace DontScrewAround
             new Form2().Show();
             this.Visible = false;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new Settings().Show();
+            this.Visible = false;
+
+        }
     }
 }
