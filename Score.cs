@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace DontScrewAround
 {
@@ -15,6 +16,28 @@ namespace DontScrewAround
         public Score()
         {
             InitializeComponent();
+
+            String[] lines = { "0", "0", "0", "0", "0" };
+            lines = File.ReadAllLines("wynik_IO.txt");
+            int[] wyniki;
+            wyniki = Array.ConvertAll(lines, new Converter<string, int>(StringtoInt));
+            Array.Sort(wyniki);
+            Array.Reverse(wyniki);
+
+            label2.Text = "TOP1: " + wyniki[0];
+            label3.Text = "TOP2: " + wyniki[1];
+            label4.Text = "TOP3: " + wyniki[2];
+            label5.Text = "TOP4: " + wyniki[3];
+            label6.Text = "TOP5: " + wyniki[4];
+
+
         }
+
+        public static int StringtoInt(string s)
+        {
+            return Int32.Parse(s);
+        }
+
+
     }
 }

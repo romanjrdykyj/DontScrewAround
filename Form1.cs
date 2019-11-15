@@ -39,5 +39,11 @@ namespace DontScrewAround
             this.Visible = false;
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new Score().Show();
+            this.Visible = false;
+        }
     }
 }
