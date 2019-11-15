@@ -22,15 +22,24 @@ namespace DontScrewAround
         Niewiadome niewiadoma2 = new Niewiadome();
         Niewiadome niewiadoma3 = new Niewiadome();
         public int wynik = 0;
+        public int wylosowana;
+        public Boolean czy_szansa = false;
+
 
 
         public Form2()
         {
             InitializeComponent();
             wybor_poprawnej();
-            
-
         }
+        public Form2(int wynik, Boolean czy_szansa)
+        {
+            this.wynik = wynik;
+            this.czy_szansa = czy_szansa;
+            InitializeComponent();
+            wybor_poprawnej();
+        }
+
 
         public void odbijanie_kulek()
         {
@@ -66,8 +75,17 @@ namespace DontScrewAround
             if (((niewiadoma2.wspolrzedne_x - 26 < zawodnik.pozycja_x & zawodnik.pozycja_x < niewiadoma2.wspolrzedne_x + 70) & (niewiadoma2.wspolrzedne_y - 26 < zawodnik.pozycja_y & zawodnik.pozycja_y < niewiadoma2.wspolrzedne_y + 70))
                 | (niewiadoma3.wspolrzedne_x - 26 < zawodnik.pozycja_x & zawodnik.pozycja_x < niewiadoma3.wspolrzedne_x + 70) & (niewiadoma3.wspolrzedne_y - 26 < zawodnik.pozycja_y & zawodnik.pozycja_y < niewiadoma3.wspolrzedne_y + 70))
             {
-                System.Diagnostics.Process.GetCurrentProcess().Kill();
-
+                if (czy_szansa == false)
+                {
+                    czy_szansa = true;
+                    new Szansa(wylosowana, wynik, czy_szansa).Show();
+                    this.Close();
+                }
+                else
+                {
+                    new GameOver(wynik).Show();
+                    this.Close();
+                }
             }
         }
 
@@ -127,32 +145,36 @@ namespace DontScrewAround
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            
+            if (czy_szansa == false)
+            {
+
+
 
                 if (ratunek_licznik_odstępu == 100)
                 {
                     Random rnd = new Random();
                     int poczatek = 1;
                     int koniec = 49;
-                    int wylosowana = rnd.Next(poczatek, koniec);
+                    wylosowana = rnd.Next(poczatek, koniec);
+                    label1.Visible = true;
                     label1.Text = "Zapamiętaj: " + wylosowana.ToString();
                     ratunek_licznik_odstępu = 0;
                 }
-                if(ratunek_licznik_widocznosci < 20)
+                if (ratunek_licznik_widocznosci < 20)
                 {
-                label1.Visible = true;
+                    label1.Visible = true;
                 }
-                if(ratunek_licznik_widocznosci < 100 & ratunek_licznik_widocznosci > 20)
-            {
-                label1.Visible = false;
-            }
-                if(ratunek_licznik_widocznosci == 100)
-            {
-                ratunek_licznik_widocznosci = 0;
-            }
+                if (ratunek_licznik_widocznosci < 100 & ratunek_licznik_widocznosci > 20)
+                {
+                    label1.Visible = false;
+                }
+                if (ratunek_licznik_widocznosci == 100)
+                {
+                    ratunek_licznik_widocznosci = 0;
+                }
                 ratunek_licznik_odstępu += 1;
-            ratunek_licznik_widocznosci += 1;
-            
+                ratunek_licznik_widocznosci += 1;
+            }
         }
 
         private void timer2_Tick(object sender, EventArgs e)

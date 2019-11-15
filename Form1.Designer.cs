@@ -72,7 +72,6 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");

@@ -55,6 +55,7 @@
             this.label1.Size = new System.Drawing.Size(138, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Zapamiętaj: ";
+            this.label1.Visible = false;
             // 
             // label2
             // 
@@ -103,6 +104,7 @@
             this.MinimumSize = new System.Drawing.Size(1278, 982);
             this.Name = "Form2";
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DontScrewAround";
             this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
