@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace DontScrewAround
 {
@@ -29,8 +30,23 @@ namespace DontScrewAround
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Form2().Show();
-            this.Visible = false;
+            String lines = File.ReadAllText("settings_IO.txt");
+            int settings = 0;
+            Int32.TryParse(lines, out settings);
+            if (settings == 0) {
+                new Form2().Show();
+                this.Visible = false;
+                    }
+            if (settings == 1)
+            {
+                new Form2().Show();
+                this.Visible = false;
+            }
+            if (settings == 2)
+            {
+                new Form2().Show();
+                this.Visible = false;
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -44,6 +60,11 @@ namespace DontScrewAround
         {
             new Score().Show();
             this.Visible = false;
+        }
+
+        public static int StringtoInt(string s)
+        {
+            return Int32.Parse(s);
         }
     }
 }

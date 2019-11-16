@@ -13,8 +13,7 @@ namespace DontScrewAround
 {
     public partial class Settings : Form
     {
-        int szybkosc;
-        int ilosc_kulek;
+        int wybor_poziomu;
         public Settings()
         {
             InitializeComponent();
@@ -24,22 +23,19 @@ namespace DontScrewAround
         {
             if (radioButton1.Checked)
             {
-                szybkosc = 0;
-                ilosc_kulek = 3;
+                wybor_poziomu = 0;
             }
             if (radioButton2.Checked)
             {
-                szybkosc = 0;
-                ilosc_kulek = 6;
+                wybor_poziomu = 1;
 
             }
             if (radioButton3.Checked)
             {
-                szybkosc = 2;
-                ilosc_kulek = 6;
+                wybor_poziomu = 2;
             }
 
-            File.WriteAllText("wynik_IO.txt", szybkosc.ToString() + Environment.NewLine + ilosc_kulek.ToString());
+            File.WriteAllText("settings_IO.txt", wybor_poziomu.ToString());
             new Form1().Show();
             this.Close();
         }
