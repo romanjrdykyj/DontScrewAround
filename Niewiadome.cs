@@ -23,7 +23,7 @@ namespace DontScrewAround
 
         }
 
-        public void losowanie_niewiadomych(int rozwiazanie)
+        public void losowanie_niewiadomych(int rozwiazanie) //losowanie liczb w srodku kulek
         {
             switch (rozwiazanie)
             {
@@ -300,7 +300,7 @@ namespace DontScrewAround
 
 
 
-        public void Generowanie_pozycji()
+        public void Generowanie_pozycji() //generowanie losowych pozycji kulek
         {
             int poczatek_x = 250;
             int koniec_x = 1050;
@@ -312,7 +312,7 @@ namespace DontScrewAround
             wspolrzedne_y = Form2.random.Next(poczatek_y, koniec_y);
         }
 
-        public void ruch()
+        public void ruch() //część kodu odpowiedzialna za ruch, bez odbić od kulek
         {
 
 

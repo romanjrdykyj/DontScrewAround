@@ -43,9 +43,10 @@
             this.groupBox1.Controls.Add(this.radioButton3);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(537, 223);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.groupBox1.Location = new System.Drawing.Point(540, 225);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(277, 142);
+            this.groupBox1.Size = new System.Drawing.Size(287, 146);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Poziom trudności";
@@ -55,7 +56,7 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.Location = new System.Drawing.Point(28, 107);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(97, 29);
+            this.radioButton3.Size = new System.Drawing.Size(96, 30);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.Text = "Trudny";
             this.radioButton3.UseVisualStyleBackColor = true;
@@ -65,7 +66,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(28, 72);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(92, 29);
+            this.radioButton2.Size = new System.Drawing.Size(93, 30);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.Text = "Średni";
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -76,7 +77,7 @@
             this.radioButton1.Checked = true;
             this.radioButton1.Location = new System.Drawing.Point(28, 40);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(86, 29);
+            this.radioButton1.Size = new System.Drawing.Size(87, 30);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Łatwy";
@@ -95,13 +96,14 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.button1.Location = new System.Drawing.Point(612, 412);
+            this.button1.Location = new System.Drawing.Point(613, 460);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 36);
             this.button1.TabIndex = 3;
             this.button1.Text = "Zatwierdź";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Settings
@@ -116,7 +118,7 @@
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1280, 1024);
-            this.MinimumSize = new System.Drawing.Size(1280, 1024);
+            this.MinimumSize = new System.Drawing.Size(1278, 982);
             this.Name = "Settings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings";

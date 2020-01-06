@@ -28,7 +28,7 @@ namespace DontScrewAround
         }
 
 
-        private void GameOver_MouseClick(object sender, MouseEventArgs e)
+        private void GameOver_MouseClick(object sender, MouseEventArgs e) //wyswietlanie wyniku i zapisywanie go do pliku w celu zapisów najlepszych wyników
         {
             File.AppendAllText("wynik_IO.txt", wynik.ToString() + Environment.NewLine);
             new Form1().Show();

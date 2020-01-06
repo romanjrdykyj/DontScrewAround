@@ -16,7 +16,7 @@ namespace DontScrewAround
         int wynik;
         Boolean czy_szansa;
 
-        public Szansa(int ostatnia_liczba, int wynik, Boolean czy_szansa)
+        public Szansa(int ostatnia_liczba, int wynik, Boolean czy_szansa) //konstruktor z przekazaniem parametrów z poprzedniego Form
         {
             this.ostatnia_liczba = ostatnia_liczba;
             this.wynik = wynik;
@@ -24,7 +24,7 @@ namespace DontScrewAround
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)  //sprawdza czy dobrze odpowiedzielismy na pytanie, jesli tak gramy dalej, jesli nie przegrywamy
         {
             if (textBox1.Text == ostatnia_liczba.ToString())
             {

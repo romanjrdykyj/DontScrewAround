@@ -19,7 +19,7 @@ namespace DontScrewAround
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //radiobuttony na wybór poziomu (łatwy, sredni, trudny) i zapisanie go do pliku w celu łatwiejszego przesyłania miedzy formami
         {
             if (radioButton1.Checked)
             {

@@ -17,7 +17,7 @@ namespace DontScrewAround
 
         }
 
-        public void Pob_wspol_zaw(int x, int y)
+        public void Pob_wspol_zaw(int x, int y) //niepotrzebnie zrobiona metoda ale już zostawiam; pobiera ona wspolrzedne i ogranicza pole ruchu zawodnika
         {
             this.pozycja_x = x;
             this.pozycja_y = y;

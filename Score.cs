@@ -13,7 +13,7 @@ namespace DontScrewAround
 {
     public partial class Score : Form
     {
-        public Score()
+        public Score() //pobieranie danych z pliku, porządkowanie ich od najwiekszej od najmniejszej i wsywietlanie TOP5 wyników
         {
             InitializeComponent();
 
@@ -38,6 +38,10 @@ namespace DontScrewAround
             return Int32.Parse(s);
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dispose();
+            new Form1().Show();
+        }
     }
 }
